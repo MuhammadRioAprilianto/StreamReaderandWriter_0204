@@ -21,4 +21,15 @@ int main(){
     //membuat objek input file stream
     ifstream infile;
     infile.open("contohfile.txt"); // membuka file yang akan dituliskan 
+    cout << endl << ">= Membuka dan membaca file " << endl;
+
+    //jika file ada maka
+    if (infile.is_open())
+    {
+        while (getline(infile, baris)) //melakukan perulangan setiap baris
+        {
+            cout << baris << '\n';
+        }
+        
+    }
 }
