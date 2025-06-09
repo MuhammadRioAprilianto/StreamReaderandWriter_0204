@@ -14,5 +14,7 @@ int main(){
         cout << "- "; 
         getline(cin, baris); //mendapatkan setiap karater dalam satu baris
         if (baris == "q") break; //jika memasukkan karakter q maka loop akan berhenti
+        outfile << baris << endl;
     }
+    outfile.close(); //menutup file
 }
