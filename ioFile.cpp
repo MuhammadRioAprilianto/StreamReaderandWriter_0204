@@ -17,4 +17,7 @@ int main(){
         outfile << baris << endl;
     }
     outfile.close(); //menutup file
+
+    //membuat objek input file stream
+    ifstream infile;
 }
