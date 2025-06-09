@@ -30,6 +30,6 @@ int main(){
         {
             cout << baris << '\n';
         }
-        
+        infile.close(); //menutup file
     }
 }
