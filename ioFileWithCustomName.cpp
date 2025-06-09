@@ -45,10 +45,25 @@ void ReadandWriteFile(string format){
 
 int main(){
     int choice;
-    cout << "" << endl;
-    cout << "" << endl;
-    cout << "" << endl;
-    cout << "" << endl;
+    cout << "1. File Format csv" << endl;
+    cout << "2. File Format txt" << endl;
+    cout << "3. keluar" << endl;
+    cout << "Pilih format file" << endl;
     cin >> choice;
     cin.ignore();
+    switch (choice)
+    {
+    case 1:
+        ReadandWriteFile("csv");
+        break;
+    case 2:
+        ReadandWriteFile("txt");
+        break;
+    case 3:
+        cout << "keluar dari program" << endl;
+        return 0;
+    default:
+        cout << "pilihan tidak valid" << endl;
+        break;
+    }
 }
