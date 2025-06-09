@@ -40,7 +40,6 @@ void ReadandWriteFile(string format){
     }
     // jika tidak ditemukan file maka akan menampilkan ini
     else cout << "Unable to open file";
-    return 0;
 };
 
 int main(){
@@ -48,7 +47,7 @@ int main(){
     cout << "1. File Format csv" << endl;
     cout << "2. File Format txt" << endl;
     cout << "3. keluar" << endl;
-    cout << "Pilih format file" << endl;
+    cout << "Pilih format file : ";
     cin >> choice;
     cin.ignore();
     switch (choice)
@@ -61,9 +60,9 @@ int main(){
         break;
     case 3:
         cout << "keluar dari program" << endl;
-        return 0;
     default:
         cout << "pilihan tidak valid" << endl;
         break;
+        return 0;
     }
 }
