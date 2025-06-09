@@ -6,5 +6,5 @@ using namespace std;
 int main(){
     string baris; //membuat variable baring
     ofstream outfile; //membuat objek output file stream
-    
+    outfile.open("contohfile.txt") //membuka file yang telah dibuat untuk ditulisi
 }
